@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './styles'
 import appTheme from '../../../constants/theme'
 
-const AppButton = ({ onPress, label, style, color, labelStyle }) => {	
+const AppButton = ({ onPress, label, style, color, labelStyle, size }) => {	
 	const buttonContainerStyle = {
 		...styles.buttonContainer,
 		backgroundColor: color ? appTheme.colors[color] : appTheme.colors.primary

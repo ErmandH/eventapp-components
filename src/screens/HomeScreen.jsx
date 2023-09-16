@@ -11,6 +11,12 @@ const HomeScreen = ({ navigation }) => {
 	  <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Stack')}>
 		<Text style={styles.buttonText}>Stack</Text>
 	  </TouchableOpacity>
+	  <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('AppText')}>
+		<Text style={styles.buttonText}>AppText</Text>
+	  </TouchableOpacity>
+	  <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('InputField')}>
+		<Text style={styles.buttonText}>Input Field</Text>
+	  </TouchableOpacity>
 	</View>
   )
 }

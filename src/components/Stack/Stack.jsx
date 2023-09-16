@@ -18,12 +18,12 @@ const Stack = ({ spacing, children, style, direction }) => {
   const spacedChdilren = children.map((child, index) => {
     if (direction === 'column'){
       return index > 0  
-      ? React.cloneElement(child, {style: {...child.props.style, marginTop: space}}) 
+      ? React.cloneElement(child, {style: {...child.props.style, marginTop: space, key:index}}) 
       : child
     }
     else {
       return index > 0  
-      ? React.cloneElement(child, {style: {...child.props.style, marginLeft: space}}) 
+      ? React.cloneElement(child, {style: {...child.props.style, marginLeft: space, key:index}}) 
       : child
     }
   })
